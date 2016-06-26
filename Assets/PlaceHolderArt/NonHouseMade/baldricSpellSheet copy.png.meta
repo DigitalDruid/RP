@@ -1,0 +1,512 @@
+fileFormatVersion: 2
+guid: f75c170426f90b5468c307abfafdf587
+timeCreated: 1466916886
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: baldricSpellSheet copy_0
+    21300002: baldricSpellSheet copy_1
+    21300004: baldricSpellSheet copy_2
+    21300006: baldricSpellSheet copy_3
+    21300008: baldricSpellSheet copy_4
+    21300010: baldricSpellSheet copy_5
+    21300012: baldricSpellSheet copy_6
+    21300014: baldricSpellSheet copy_7
+    21300016: baldricSpellSheet copy_8
+    21300018: baldricSpellSheet copy_9
+    21300020: baldricSpellSheet copy_10
+    21300022: baldricSpellSheet copy_11
+    21300024: baldricSpellSheet copy_12
+    21300026: baldricSpellSheet copy_13
+    21300028: baldricSpellSheet copy_14
+    21300030: baldricSpellSheet copy_15
+    21300032: baldricSpellSheet copy_16
+    21300034: baldricSpellSheet copy_17
+    21300036: baldricSpellSheet copy_18
+    21300038: baldricSpellSheet copy_19
+    21300040: baldricSpellSheet copy_20
+    21300042: baldricSpellSheet copy_21
+    21300044: baldricSpellSheet copy_22
+    21300046: baldricSpellSheet copy_23
+    21300048: baldricSpellSheet copy_24
+    21300050: baldricSpellSheet copy_25
+    21300052: baldricSpellSheet copy_26
+    21300054: baldricSpellSheet copy_27
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: baldricSpellSheet copy_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 194
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 23}
+        - {x: -16, y: 13}
+        - {x: -16, y: -23}
+        - {x: 16, y: -23}
+        - {x: 16, y: 23}
+    - name: baldricSpellSheet copy_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 194
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 23}
+        - {x: -16, y: -23}
+        - {x: 16, y: -23}
+        - {x: 16, y: 21}
+        - {x: 15, y: 23}
+    - name: baldricSpellSheet copy_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 194
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 23}
+        - {x: -16, y: 19}
+        - {x: -16, y: -23}
+        - {x: 16, y: -23}
+        - {x: 16, y: 22}
+        - {x: 14, y: 23}
+    - name: baldricSpellSheet copy_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 194
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 23}
+        - {x: -18, y: 12}
+        - {x: -18, y: -16}
+        - {x: -16, y: -23}
+        - {x: 18, y: -23}
+        - {x: 18, y: 23}
+    - name: baldricSpellSheet copy_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 194
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 23}
+        - {x: -25, y: 20}
+        - {x: -25, y: -20}
+        - {x: -19, y: -23}
+        - {x: 25, y: -23}
+        - {x: 25, y: 17}
+        - {x: 13, y: 23}
+    - name: baldricSpellSheet copy_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 194
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 23}
+        - {x: -24, y: -23}
+        - {x: 16, y: -23}
+        - {x: 24, y: 0}
+        - {x: 24, y: 23}
+    - name: baldricSpellSheet copy_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 194
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 23}
+        - {x: -18, y: 12}
+        - {x: -18, y: -16}
+        - {x: -16, y: -23}
+        - {x: 18, y: -23}
+        - {x: 18, y: 23}
+    - name: baldricSpellSheet copy_7
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 130
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 130
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 130
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 130
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 130
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 18.5}
+        - {x: 8.5, y: 23.5}
+        - {x: -16.5, y: 23.5}
+        - {x: -16.5, y: -16.5}
+        - {x: -12.5, y: -23.5}
+        - {x: 10.5, y: -23.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 8.5}
+        - {x: 12.5, y: 8.5}
+    - name: baldricSpellSheet copy_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 130
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 23.5}
+        - {x: -16.5, y: 18.5}
+        - {x: -16.5, y: -10.5}
+        - {x: -14.5, y: -22.5}
+        - {x: -12.5, y: -23.5}
+        - {x: 16.5, y: -23.5}
+        - {x: 16.5, y: 23.5}
+    - name: baldricSpellSheet copy_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 130
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 65
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 24}
+        - {x: -13, y: 19}
+        - {x: -16, y: 10}
+        - {x: -16, y: -20}
+        - {x: -14, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 17}
+        - {x: 9, y: 24}
+    - name: baldricSpellSheet copy_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 65
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 24}
+        - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 15}
+        - {x: 13, y: 19}
+    - name: baldricSpellSheet copy_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 65
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 14}
+        - {x: 10, y: 24}
+    - name: baldricSpellSheet copy_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 65
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 24}
+        - {x: -12, y: 24}
+        - {x: -18, y: 13}
+        - {x: -18, y: -19}
+        - {x: -16, y: -24}
+        - {x: 17, y: -24}
+        - {x: 18, y: -23}
+        - {x: 18, y: 18}
+    - name: baldricSpellSheet copy_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 65
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 24}
+        - {x: -25, y: 15}
+        - {x: -25, y: -17}
+        - {x: -20, y: -24}
+        - {x: 20, y: -24}
+        - {x: 25, y: -20}
+        - {x: 25, y: 15}
+        - {x: 16, y: 24}
+    - name: baldricSpellSheet copy_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 65
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -24, y: 19}
+        - {x: -24, y: -3}
+        - {x: -18, y: -24}
+        - {x: 21, y: -24}
+        - {x: 24, y: -19}
+        - {x: 24, y: 24}
+    - name: baldricSpellSheet copy_20
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 65
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -17, y: 23}
+        - {x: -17, y: -19}
+        - {x: -14, y: -24}
+        - {x: 15, y: -24}
+        - {x: 17, y: -22}
+        - {x: 17, y: 18}
+        - {x: 15, y: 24}
+    - name: baldricSpellSheet copy_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 2
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: baldricSpellSheet copy_25
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 2
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -15.5}
+        - {x: -12.5, y: -23.5}
+        - {x: 14.5, y: -23.5}
+        - {x: 16.5, y: -15.5}
+        - {x: 16.5, y: 23.5}
+    - name: baldricSpellSheet copy_26
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 23.5}
+        - {x: -16.5, y: 17.5}
+        - {x: -16.5, y: -10.5}
+        - {x: -8.5, y: -23.5}
+        - {x: 16.5, y: -23.5}
+        - {x: 16.5, y: 23.5}
+    - name: baldricSpellSheet copy_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
