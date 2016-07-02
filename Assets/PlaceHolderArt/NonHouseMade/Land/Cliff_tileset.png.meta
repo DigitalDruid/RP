@@ -1,9 +1,19 @@
 fileFormatVersion: 2
 guid: 2949925470ceb6b47938fa6d01a69fdc
-timeCreated: 1467000630
+timeCreated: 1467090987
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cliff_tileset_0
+    21300002: Cliff_tileset_1
+    21300004: Cliff_tileset_2
+    21300006: Cliff_tileset_3
+    21300008: Cliff_tileset_4
+    21300010: Cliff_tileset_5
+    21300012: Cliff_tileset_6
+    21300014: Cliff_tileset_7
+    21300016: Cliff_tileset_8
+    21300018: Cliff_tileset_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,30 +36,222 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 512
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Cliff_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 294
+        width: 184
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82.14215, y: 71.49304}
+        - {x: 44.14215, y: 104.49304}
+        - {x: -29.85785, y: 104.49304}
+        - {x: -77.85785, y: 58.493042}
+        - {x: -78.85785, y: 22.493042}
+        - {x: -78.85785, y: -80.50696}
+        - {x: -72.85785, y: -99.50696}
+        - {x: -57.85785, y: -103.50696}
+        - {x: 57.14215, y: -103.50696}
+        - {x: 65.14215, y: -101.50696}
+        - {x: 92.14215, y: -67.50696}
+        - {x: 92.14215, y: 58.493042}
+      - - {x: -90.85785, y: 59.493042}
+        - {x: -90.85785, y: 52.493042}
+        - {x: -86.85785, y: 52.493042}
+        - {x: -85.85785, y: 53.493042}
+        - {x: -85.85785, y: 58.493042}
+        - {x: -86.85785, y: 59.493042}
+    - name: Cliff_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 392
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.66005, y: 47.824066}
+        - {x: -32.66005, y: -20.175934}
+        - {x: -5.6600494, y: -47.175934}
+        - {x: 27.33995, y: -47.175934}
+        - {x: 33.33995, y: -23.175934}
+        - {x: 33.33995, y: 47.824066}
+    - name: Cliff_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 286
+        width: 71
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 71, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.112335, y: -51.91153}
+        - {x: 35.887665, y: -51.91153}
+        - {x: 35.887665, y: -46.91153}
+        - {x: -35.112335, y: -46.91153}
+      - - {x: -31.112335, y: 53.08847}
+        - {x: -32.112335, y: 52.08847}
+        - {x: -32.112335, y: -45.91153}
+        - {x: 35.887665, y: -45.91153}
+        - {x: 35.887665, y: 52.08847}
+        - {x: 34.887665, y: 53.08847}
+    - name: Cliff_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 294
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.805176, y: 48.993042}
+        - {x: -48.805176, y: -48.006958}
+        - {x: 31.194824, y: -48.006958}
+        - {x: 49.194824, y: -45.006958}
+        - {x: 49.194824, y: 48.993042}
+    - name: Cliff_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 165
+        width: 104
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.75149, y: 48.531815}
+        - {x: -51.75149, y: -14.468185}
+        - {x: -32.75149, y: -48.468185}
+        - {x: 42.24851, y: -48.468185}
+        - {x: 52.24851, y: -46.468185}
+        - {x: 52.24851, y: 32.531815}
+        - {x: 47.24851, y: 48.531815}
+    - name: Cliff_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 165
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49.721664, y: -44.468185}
+        - {x: 49.721664, y: 48.531815}
+        - {x: -48.278336, y: 48.531815}
+        - {x: -48.278336, y: -48.468185}
+        - {x: -1.2783356, y: -48.468185}
+        - {x: 11.721664, y: -46.468185}
+        - {x: 15.721664, y: -43.468185}
+        - {x: 22.721664, y: -37.468185}
+    - name: Cliff_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 165
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.694824, y: 48.531815}
+        - {x: 29.694824, y: 47.531815}
+        - {x: 10.694824, y: 48.531815}
+        - {x: -64.305176, y: 48.531815}
+        - {x: -64.305176, y: -48.468185}
+        - {x: 57.694824, y: -48.468185}
+        - {x: 64.694824, y: -21.468185}
+        - {x: 64.694824, y: 48.531815}
+    - name: Cliff_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 101
+        width: 130
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61.251495, y: 18.295227}
+        - {x: -64.251495, y: 9.295227}
+        - {x: -64.251495, y: -16.704773}
+        - {x: 64.748505, y: -16.704773}
+        - {x: 64.748505, y: 16.295227}
+        - {x: 63.748505, y: 18.295227}
+    - name: Cliff_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 69
+        width: 173
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58.66005, y: 39.67694}
+        - {x: -85.66005, y: 20.67694}
+        - {x: -85.66005, y: -11.323059}
+        - {x: 37.33995, y: -39.32306}
+        - {x: 86.33995, y: -39.32306}
+        - {x: 86.33995, y: 3.676941}
+        - {x: 5.3399506, y: 39.67694}
+    - name: Cliff_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 192
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70, y: 42.98807}
+        - {x: -90, y: 17.988071}
+        - {x: -95, y: -3.0119286}
+        - {x: -95, y: -41.01193}
+        - {x: 95, y: -41.01193}
+        - {x: 95, y: -19.011929}
+        - {x: -37, y: 42.98807}
     outline: []
   spritePackingTag: 
   userData: 
