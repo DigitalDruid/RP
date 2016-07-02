@@ -2,12 +2,12 @@
 using UnityEngine.UI;
 using System.Collections;
 
-using RPGame.Core.Util;
+using Assets.Scripts.RPGame.Core.Util;
 
-namespace RPGame.Core.UI {
+namespace Assets.Scripts.RPGame.Core.UI {
     public class MenuLoader : MonoBehaviour {
 
-        public rpPanel panelReference;
+        //public rpPanel panelReference;
         public rpMenu menuReference;
 
         // Use this for initialization
@@ -16,20 +16,38 @@ namespace RPGame.Core.UI {
             if (menuReference) {
                 rpMenu menu = Instantiate(menuReference, new Vector3(), Quaternion.identity) as rpMenu;
                 menu.name += " [Test Menu 1]";
-                menu.Position = new Vector3(0, 0, 0);
-                menu.Resize(4, 5);
-            }
-            if (panelReference) {
-                rpPanel panel = Instantiate(panelReference, new Vector3(), Quaternion.identity) as rpPanel;
-                panel.name += " [Test Panel 1]";
+                menu.ResizeTo(250, 200);
                 
-                //RectTransform tmpRect = panel.transform.GetComponent<RectTransform>();
-                //panel.transform.localScale = new Vector3(1, 1, 1);
-                
-                panel.Position = new Vector3(0, 0, 0);
-                panel.Resize(4,5);
+                rpButton b1 = menu.AddButton("New Game", startGame);
+                rpButton b2 = menu.AddButton("Continue", continueGame);
+                rpButton b3 = menu.AddButton("Options", gotoOptions);
+
+                b2.isEnabled = false;
+
+                menu.layout();
+
+                //DBG.Log(((RectTransform)menu.ParentCanvas.transform).sizeDelta.x.ToString());
+
+                // menu w:250, h:200, minimum
+                //menu.top += 3.3f;
+                //menu.left -= 3.9f;
+                // menu w:250, h:200, maximum
+                //menu.top -= 3.3f;
+                //menu.left += 3.9f;
+                //menu.anchor = new Vector2(0, 0);
             }
-            else DBG.Log(new Error().newError(Error.TYPE.UNABLE_TO_LOAD, name, "Panel reference not linked in editor."));
+        }
+        void startGame()
+        {
+            DBG.Log("Simulated Game Start");
+        }
+        void continueGame()
+        {
+            DBG.Log("Simulated Game Continue");
+        }
+        void gotoOptions()
+        {
+            DBG.Log("Simulated Options Menu");
         }
     }
 }

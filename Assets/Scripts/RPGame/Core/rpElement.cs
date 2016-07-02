@@ -1,40 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-using RPGame.Core.Util;
+using Assets.Scripts.RPGame.Core.Util;
 
-namespace RPGame.Core
+namespace Assets.Scripts.RPGame.Core
 {
     public class rpElement : MonoBehaviour
     {
-        public Canvas canvas;
         public GameObject Parent {
             get { return transform.parent.gameObject; }
             set { transform.SetParent(value.transform); }
         }
+        public Transform ParentTransform
+        {
+            get { return transform.parent; }
+            set { transform.SetParent(value); }
+        }
+        rpElement _parentElement;
+        public rpElement ParentElement
+        {
+            get { return _parentElement /*Parent.GetComponent<rpElement>()*/; }
+            set { _parentElement = value; ParentTransform = value.transform; }
+        }
         public string ID { get { return (gameObject.name + " [" + GetInstanceID() + "] : "); } }
 
         // Use this for initialization
-        public void Awake()
+        public virtual void Awake()
         {
             DBG.Log(this,"Awake");
         }
-        public void Start()
+        public virtual void Start()
         {
             DBG.Log(this,"Start");
             Init();
         }
-        void Init() {
-            DBG.Log(this, "Initializing");
-            if (!canvas)
-            {
-                DBG.Log("Canvas Not Linked. Finding...");
-                canvas = FindObjectOfType<Canvas>();
-                if (!canvas) { DBG.Log(new Error().newError(Error.TYPE.UNABLE_TO_LOAD, name, "Canvas Not Found! Aborting")); return; }
-            }
-            DBG.Log("Canvas Found: " + canvas.name);
-            Parent = canvas.gameObject;
-            DBG.Log("Parent Set: " + Parent.name);
-        }
+        void Init() { }
     }
 }
