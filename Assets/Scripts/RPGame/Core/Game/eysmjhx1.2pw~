@@ -1,0 +1,158 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using Assets.Scripts.RPGame.Core.Util;
+using System;
+
+namespace Assets.Scripts.RPGame.Core.Game
+{
+    interface IActor
+    {
+        rpStatList Stats { get; set; }
+        rpSkillList Skills { get; set; }
+
+        void MoveAction();
+        void AttackAction();
+        void DefendAction();
+    }
+    public class Actor : MonoBehaviour//, IActor
+    {
+        Actor actor;
+        
+        rpStatList Stats; int numStats { get { return (int)rpStat.TYPE.NUM_TYPES; } }
+        rpSkillList Skills; int numSkills { get { return (int)rpSkillType.COUNT; } }
+        rpItemList Inventory; int numStats { get { return (int)Data.DataType.Item.COUNT; } }
+
+
+        public int Level
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.LEVEL].Value); }
+            set { Stats[rpStat.TYPE.LEVEL].Value = value; }
+        }
+        public int XP
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.XP].Value); }
+            set { Stats[rpStat.TYPE.XP].Value = value; }
+        }
+        public int Health
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.HEALTH].Value); }
+            set { Stats[rpStat.TYPE.HEALTH].Value = value; }
+        }
+        public int Stamina
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.STAMINA].Value); }
+            set { Stats[rpStat.TYPE.STAMINA].Value = value; }
+        }
+        public int Attack
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.ATTACK].Value); }
+            set { Stats[rpStat.TYPE.ATTACK].Value = value; }
+        }
+        public int Defense
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.DEFENSE].Value); }
+            set { Stats[rpStat.TYPE.DEFENSE].Value = value; }
+        }
+        public int Speed
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.SPEED].Value); }
+            set { Stats[rpStat.TYPE.SPEED].Value = value; }
+        }
+        public int Luck
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.LUCK].Value); }
+            set { Stats[rpStat.TYPE.LUCK].Value = value; }
+        }
+        public int XPReward
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.XP_DROP].Value); }
+            set { Stats[rpStat.TYPE.XP_DROP].Value = value; }
+        }
+        public int GoldReward
+        {
+            get { return Mathf.FloorToInt(Stats[rpStat.TYPE.GOLD_DROP].Value); }
+            set { Stats[rpStat.TYPE.GOLD_DROP].Value = value; }
+        }
+        
+        void Start() {
+            DBG.Logging = true;
+            DBG.Add("Actor Started");
+            actor = new Actor("Test Actor", 10);
+
+            DBG.Log("Level: " + actor.Level);
+        }
+        public int rollStat(int level)
+        {
+            int stat = 10;
+            for (int i = 0; i < level; i++) { stat += rollStat(); }
+            return stat;
+        }
+        public struct Range {
+            public float min, max;
+            public Vector2 v2 { get { return new Vector2(min, max); } set { min = value.x; max = value.y; } }
+            public float x { get { return v2.x; } set { v2 = new Vector2(value, v2.y); } }
+            public float y { get { return v2.y; } set { v2 = new Vector2(v2.x, value); } }
+        }
+        public int rollStat() {return rollStat(1,5); }
+        public int rollStat(Range range) { return rollStat(range.min, range.max); }
+        public int rollStat(float min, float max) { return Mathf.FloorToInt(UnityEngine.Random.Range(min, max)); }
+
+        public int _level;
+        public Actor(string name = "", int level = 0) {
+            DBG.Add(((name != "") ? "Actor: " + name : "Nameless Actor") + " Created", true);
+
+            _level = level;
+
+            if (Stats == null) Stats = new rpStatList();
+            
+            if (level < 1) {
+                DBG.Add("Actor has no level", true); DBG.Log();
+                setupStats();
+            } else {
+                DBG.Add("Actor: " + name + ", Level: " + level, true); DBG.Log();
+                setupStats();
+            }
+            DBG.Log();
+        }
+        void setupStats()
+        {
+            DBG.Add("<StatKVList>");
+            for (int i = 0; i < numStats; i++) {
+                rpStat.TYPE type = (rpStat.TYPE)i;
+                switch (type)
+                {
+                    case rpStat.TYPE.INVALID_TYPE:
+                    case rpStat.TYPE.NUM_TYPES:
+                        break;
+                    case rpStat.TYPE.LEVEL:
+                    case rpStat.TYPE.XP:
+                        Stats.AddStat(type, new rpStat(_level));
+                        break;
+                    case rpStat.TYPE.XP_DROP:
+                        Stats.AddStat(type, new rpStat(_level * 3));
+                        break;
+                    case rpStat.TYPE.GOLD_DROP:
+                        Stats.AddStat(type, new rpStat(rollStat(_level, _level * 5)));
+                        break;
+                    default:
+                        Stats.AddStat(type, new rpStat(rollStat(_level)));
+                        break;
+                }
+                DBG.Add("[" + type + "]", true);
+                DBG.Add(" : " + Stats[type].Value);
+            }
+            DBG.Log();
+        }
+        /*
+        rpStat TryGet(rpStat.TYPE type)
+        {
+            return (_Stats.TryGetValue(type, out rpStat.empty)) ? _Stats[type] : rpStat.empty;
+        }
+        rpStat TryGet(int type) { return TryGet((rpStat.TYPE)type); }
+        //*/
+        public void MoveAction() { throw new NotImplementedException(); }
+        public void AttackAction() { throw new NotImplementedException(); }
+        public void DefendAction() { throw new NotImplementedException(); }
+    }
+}
